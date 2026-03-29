@@ -46,5 +46,12 @@ def delete_task(task_id):
             return f"Tarea {task_id} eliminada exitosamente"
         return f"Tarea con ID {task_id} no encontrada"
 
-def mark_task():
+def mark_task(task_id, new_status):
     tasks = load_tasks()
+    for task in tasks:
+        if task["id"] == task_id:
+            task["status"] == new_status
+            task["updateAt"] = datetime.now().isoformat(timespec="seconds")
+            save_tasks(tasks)
+            return f"Tarea {task_id} marcada como {new_status}"
+        return f"Tarea con ID {task_id} no encontrada"
