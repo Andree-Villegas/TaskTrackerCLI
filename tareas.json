@@ -29,9 +29,16 @@
     },
     {
         "id": 5,
-        "description": "Buy groceries",
+        "description": "Buy groceries and cook dinner",
         "status": "todo",
         "createdAt": "2026-03-28T20:40:45",
-        "updateAt": "2026-03-28T20:40:45"
+        "updateAt": "2026-03-28T20:53:45"
+    },
+    {
+        "id": 6,
+        "description": "Aprender ML y DL",
+        "status": "todo",
+        "createdAt": "2026-03-28T20:49:45",
+        "updateAt": "2026-03-28T20:54:09"
     }
 ]

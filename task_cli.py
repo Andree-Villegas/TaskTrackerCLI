@@ -1,5 +1,5 @@
 import sys
-from tasks import add_task, list_tasks
+from tasks import add_task, list_tasks, update_task
 
 def main():
     args = sys.argv[1:]
@@ -16,6 +16,13 @@ def main():
             list_tasks(args[1])
         else:
             list_tasks()
+    elif command == "update":
+        if len(args) < 3:
+            print("Uso: update <id> <nueva descripción>")
+        else:
+            task_id = int(args[1])
+            new_description = " ".join(args[2:])
+            print(update_task(task_id, new_description))
 
 if __name__ == "__main__":
     main()
