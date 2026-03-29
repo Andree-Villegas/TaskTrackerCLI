@@ -26,3 +26,19 @@ def list_tasks(status=None):
         return
     for task in tasks:
         print(f"[{task["id"]}] {task["description"]} - {task["status"]}")
+
+def update_task(task_id, new_description):
+    tasks = load_tasks()
+    for task in tasks:
+        if task["id"] == task_id:
+            task["description"] = new_description
+            task["updateAt"] = datetime.now().isoformat(timespec="seconds")
+            save_tasks(tasks)
+            return f"Tarea {task_id} actualizada exitosamente"
+    return f"Tara con ID {task_id} no encontrada"       
+
+def delete_task():
+    tasks = load_tasks()
+
+def mark_task():
+    tasks = load_tasks()
