@@ -16,3 +16,13 @@ def add_task(description):
     tasks.append(task)
     save_tasks(tasks)
     return f"Tarea añadida exitosamente (ID: {new_id})"
+
+def list_tasks(status=None):
+    tasks = load_tasks()
+    if status:
+        tasks = [t for t in tasks if t["status"] == status]
+    if not tasks:
+        print("No tasks found")
+        return
+    for task in tasks:
+        print(f"[{task["id"]}] {task["description"]} - {task["status"]}")

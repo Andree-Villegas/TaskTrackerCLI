@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "description": "Comprar pan",
+        "status": "todo",
+        "createdAt": "2026-03-28T17:19:34",
+        "updateAt": "2026-03-28T17:19:34"
+    },
+    {
+        "id": 2,
+        "description": "Estudiar Python",
+        "status": "todo",
+        "createdAt": "2026-03-28T19:55:06",
+        "updateAt": "2026-03-28T19:55:06"
+    },
+    {
+        "id": 3,
+        "description": "list",
+        "status": "todo",
+        "createdAt": "2026-03-28T19:55:21",
+        "updateAt": "2026-03-28T19:55:21"
+    }
+]
