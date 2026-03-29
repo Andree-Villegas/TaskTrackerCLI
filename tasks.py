@@ -4,7 +4,7 @@ from storage import load_tasks, save_tasks
 
 def add_task(description):
     tasks = load_tasks()
-    new_id = len(tasks) + 1
+    new_id = max([t["id"] for t in tasks], default=0) + 1
     now = datetime.now().isoformat(timespec="seconds")
     task = {
         "id": new_id,
@@ -44,14 +44,14 @@ def delete_task(task_id):
             tasks.pop(i)
             save_tasks(tasks)
             return f"Tarea {task_id} eliminada exitosamente"
-        return f"Tarea con ID {task_id} no encontrada"
+    return f"Tarea con ID {task_id} no encontrada"
 
 def mark_task(task_id, new_status):
     tasks = load_tasks()
     for task in tasks:
         if task["id"] == task_id:
-            task["status"] == new_status
+            task["status"] = new_status
             task["updateAt"] = datetime.now().isoformat(timespec="seconds")
             save_tasks(tasks)
             return f"Tarea {task_id} marcada como {new_status}"
-        return f"Tarea con ID {task_id} no encontrada"
+    return f"Tarea con ID {task_id} no encontrada"

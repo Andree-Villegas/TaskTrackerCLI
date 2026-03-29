@@ -1,44 +1,23 @@
 [
     {
+        "id": 1,
+        "description": "Buy groceries and cook dinner",
+        "status": "in-progress",
+        "createdAt": "2026-03-28T22:39:23",
+        "updateAt": "2026-03-28T22:40:20"
+    },
+    {
         "id": 2,
-        "description": "Estudiar Python",
-        "status": "todo",
-        "createdAt": "2026-03-28T19:55:06",
-        "updateAt": "2026-03-28T19:55:06"
+        "description": "Learn Python",
+        "status": "done",
+        "createdAt": "2026-03-28T22:40:32",
+        "updateAt": "2026-03-28T22:40:47"
     },
     {
         "id": 3,
-        "description": "list",
+        "description": "Make a 5 beats in fl studio",
         "status": "todo",
-        "createdAt": "2026-03-28T19:55:21",
-        "updateAt": "2026-03-28T19:55:21"
-    },
-    {
-        "id": 4,
-        "description": "Comer",
-        "status": "todo",
-        "createdAt": "2026-03-28T20:08:26",
-        "updateAt": "2026-03-28T20:08:26"
-    },
-    {
-        "id": 5,
-        "description": "Buy groceries and cook dinner",
-        "status": "todo",
-        "createdAt": "2026-03-28T20:40:45",
-        "updateAt": "2026-03-28T20:53:45"
-    },
-    {
-        "id": 6,
-        "description": "Aprender ML y DL",
-        "status": "todo",
-        "createdAt": "2026-03-28T20:49:45",
-        "updateAt": "2026-03-28T20:54:09"
-    },
-    {
-        "id": 6,
-        "description": "Ver youtube tutoriales",
-        "status": "todo",
-        "createdAt": "2026-03-28T22:05:02",
-        "updateAt": "2026-03-28T22:05:02"
+        "createdAt": "2026-03-28T22:41:44",
+        "updateAt": "2026-03-28T22:41:44"
     }
 ]
