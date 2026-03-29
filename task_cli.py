@@ -1,5 +1,5 @@
 import sys
-from tasks import add_task, list_tasks, update_task
+from tasks import add_task, list_tasks, update_task, delete_task
 
 def main():
     args = sys.argv[1:]
@@ -23,6 +23,12 @@ def main():
             task_id = int(args[1])
             new_description = " ".join(args[2:])
             print(update_task(task_id, new_description))
+    elif command == "delete":
+        if len(args) < 2:
+            print("Uso: delete <id>")
+        else:
+            task_id = int(args[1])
+            print(delete_task(task_id))
 
 if __name__ == "__main__":
     main()

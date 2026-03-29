@@ -37,8 +37,14 @@ def update_task(task_id, new_description):
             return f"Tarea {task_id} actualizada exitosamente"
     return f"Tara con ID {task_id} no encontrada"       
 
-def delete_task():
+def delete_task(task_id):
     tasks = load_tasks()
+    for i, task in enumerate(tasks):
+        if task["id"] == task_id:
+            tasks.pop(i)
+            save_tasks(tasks)
+            return f"Tarea {task_id} eliminada exitosamente"
+        return f"Tarea con ID {task_id} no encontrada"
 
 def mark_task():
     tasks = load_tasks()

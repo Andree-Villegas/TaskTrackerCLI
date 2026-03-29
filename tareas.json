@@ -1,12 +1,5 @@
 [
     {
-        "id": 1,
-        "description": "Comprar pan",
-        "status": "todo",
-        "createdAt": "2026-03-28T17:19:34",
-        "updateAt": "2026-03-28T17:19:34"
-    },
-    {
         "id": 2,
         "description": "Estudiar Python",
         "status": "todo",
@@ -40,5 +33,12 @@
         "status": "todo",
         "createdAt": "2026-03-28T20:49:45",
         "updateAt": "2026-03-28T20:54:09"
+    },
+    {
+        "id": 6,
+        "description": "Ver youtube tutoriales",
+        "status": "todo",
+        "createdAt": "2026-03-28T22:05:02",
+        "updateAt": "2026-03-28T22:05:02"
     }
 ]
